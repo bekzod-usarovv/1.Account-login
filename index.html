@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar after</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+</head>
+<body>
+    <div class="banner">
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="logo">
+                       <a href="#">LOGO</a>
+                    </div>
+                    <button type="button" class="nav-toggler">
+                       <span></span>
+                    </button>
+                    <nav class="nav">
+                       <ul>
+                          <li><a href="#" class="active">home</a></li>
+                          <li><a href="#">about</a></li>
+                          <li><a href="#">services</a></li>
+                          <li><a href="#">portfolio</a></li>
+                          <li><a href="#">testimonials</a></li>
+                          <li><a href="#">contact</a></li>
+                       </ul>
+                    </nav>
+                </div>
+            </div>
+         </header>
+
+
+
+
+        <div class="content">
+            <h1>Desgign your house</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis molestiae minima minus, vero qui culpa doloremque enim veniam amet quam debitis deserun</p>
+
+            <!-- <div class="button"> -->
+                <button class="button" type="button"><span class="span"></span> WATCH MORE</button>
+                <button class="button" type="button"><span class="span"></span> CSS EXAMPLE</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+
+        <ul class="menu-2">
+            <li><a href="https://www.instagram.com/bekhzod_usarov" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://t.me/Bekhzod_usarov" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bekhzod-usarov" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/bekhzod.usarov" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+
+        <ul class="menu-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <p><a href="https://www.instagram.com/bekhzod_usarov" target="_blank">&copy; 2022 Bekzod Usarov | IT Park Uzbekiston</a></p>
+    </footer>
+
+    <script>
+        
+ const navToggler = document.querySelector(".nav-toggler");
+ navToggler.addEventListener("click", navToggle);
+
+ function navToggle() {
+    navToggler.classList.toggle("active");
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("open");
+    if(nav.classList.contains("open")){
+    	nav.style.maxHeight = nav.scrollHeight + "px";
+    }
+    else{
+    	nav.removeAttribute("style");
+    }
+ } 
+    </script>
+    
+</body>
+</html>
